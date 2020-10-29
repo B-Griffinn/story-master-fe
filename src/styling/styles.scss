@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Source+Sans+Pro:wght@400;700;900&display=swap");
+
+//definition
+
+$bostonblue: #429cb5;
+$bangers: "Bangers", cursive;
+$sourcesans: "Source Sans Pro", sans-serif;
+
+$theme-colors: (
+  "primary": $bostonblue,
+);
+
+$font-family-base: $sourcesans;
+
+//custom classes
+
+.ss-title {
+  font-family: $bangers;
+}
+
+.custom-bg {
+  max-height: 100vh;
+  background: url("../assets/storysquad.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.custom-border {
+  border: 3px solid #429cb5;
+  overflow: hidden;
+}
+
+.prompt {
+  max-width: 650px;
+}
+
+.table-container {
+  max-width: 900px;
+}
+
+.dashboard-title {
+  text-align: center;
+  font-weight: 600;
+  margin: 4% auto;
+}
+
+.now {
+  background: #429cb5;
+  font-weight: 400;
+  font-size: 1.5rem;
+  border: none;
+  color: white;
+  padding: 4%;
+  width: 80%;
+  border-radius: 0.25rem;
+}
+
+.countDiv {
+  background: white;
+  width: 80%;
+  margin: 4% auto;
+  border-radius: 0.25rem;
+  text-align: center;
+  padding: 4%;
+}
+
+.clock {
+  font-size: 2.8rem;
+  color: #429cb5;
+  margin: 0;
+}
+
+.currentInstruction {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.desktopDash {
+  display: block;
+}
+
+.mobileDash {
+  display: none;
+}
+
+.h4-nav {
+  font-family: $bangers;
+
+  :hover {
+    color: white;
+    background-color: $bostonblue;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 970px) {
+  .custom-bg {
+    background-position-x: 80%;
+  }
+  .desktopDash {
+    display: none;
+  }
+  .mobileDash {
+    display: block;
+  }
+}
+
+@media (max-width: 430px) {
+  .mobile-padding {
+    padding-top: 150px;
+  }
+}
+
+.signupMain {
+  max-height: 100vh;
+  overflow: auto;
+}
+
+@media (max-height: 750px) {
+  .signupMain {
+    padding: 3% 3% 5% 0;
+  }
+}
+@media (max-height: 767px) {
+  .signupMain {
+    overflow: hidden;
+  }
+}
+
+.signupMain::-webkit-scrollbar {
+  // width: 10px;
+  // height: 10px;
+}
+.signupMain::-webkit-scrollbar-thumb {
+  // background: #f0c808;
+  // border-radius: 10px;
+  // border: 1px solid black;
+  // box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+  // margin-left: 5px;
+}
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
